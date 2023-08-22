@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Jenkins-build\Jenkins-build.csproj" />
+    <ProjectReference Include="..\Addition\Jenkins-build.csproj" />
   </ItemGroup>
 
 </Project>

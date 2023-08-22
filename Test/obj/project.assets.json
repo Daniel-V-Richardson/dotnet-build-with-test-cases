@@ -2308,8 +2308,8 @@
     },
     "Jenkins-build/1.0.0": {
       "type": "project",
-      "path": "../Jenkins-build/Jenkins-build.csproj",
-      "msbuildProject": "../Jenkins-build/Jenkins-build.csproj"
+      "path": "../Addition/Jenkins-build.csproj",
+      "msbuildProject": "../Addition/Jenkins-build.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2348,8 +2348,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "G:\\SHLOK\\jenkins-dotnet\\Jenkins-build\\Jenkins-build.csproj": {
-              "projectPath": "G:\\SHLOK\\jenkins-dotnet\\Jenkins-build\\Jenkins-build.csproj"
+            "G:\\SHLOK\\jenkins-dotnet\\Addition\\Jenkins-build.csproj": {
+              "projectPath": "G:\\SHLOK\\jenkins-dotnet\\Addition\\Jenkins-build.csproj"
             }
           }
         }

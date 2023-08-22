@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "g:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj": {}
+    "G:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj": {}
   },
   "projects": {
-    "G:\\SHLOK\\jenkins-dotnet\\Jenkins-build\\Jenkins-build.csproj": {
+    "G:\\SHLOK\\jenkins-dotnet\\Addition\\Jenkins-build.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\SHLOK\\jenkins-dotnet\\Jenkins-build\\Jenkins-build.csproj",
+        "projectUniqueName": "G:\\SHLOK\\jenkins-dotnet\\Addition\\Jenkins-build.csproj",
         "projectName": "Jenkins-build",
-        "projectPath": "G:\\SHLOK\\jenkins-dotnet\\Jenkins-build\\Jenkins-build.csproj",
+        "projectPath": "G:\\SHLOK\\jenkins-dotnet\\Addition\\Jenkins-build.csproj",
         "packagesPath": "C:\\Users\\Lionex Richardson\\.nuget\\packages\\",
-        "outputPath": "G:\\SHLOK\\jenkins-dotnet\\Jenkins-build\\obj\\",
+        "outputPath": "G:\\SHLOK\\jenkins-dotnet\\Addition\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lionex Richardson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -62,14 +62,14 @@
         }
       }
     },
-    "g:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj": {
+    "G:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "g:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj",
+        "projectUniqueName": "G:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "g:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj",
+        "projectPath": "G:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj",
         "packagesPath": "C:\\Users\\Lionex Richardson\\.nuget\\packages\\",
-        "outputPath": "g:\\SHLOK\\jenkins-dotnet\\Test\\obj\\",
+        "outputPath": "G:\\SHLOK\\jenkins-dotnet\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lionex Richardson\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -86,8 +86,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\SHLOK\\jenkins-dotnet\\Jenkins-build\\Jenkins-build.csproj": {
-                "projectPath": "G:\\SHLOK\\jenkins-dotnet\\Jenkins-build\\Jenkins-build.csproj"
+              "G:\\SHLOK\\jenkins-dotnet\\Addition\\Jenkins-build.csproj": {
+                "projectPath": "G:\\SHLOK\\jenkins-dotnet\\Addition\\Jenkins-build.csproj"
               }
             }
           }
