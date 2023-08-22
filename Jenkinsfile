@@ -10,7 +10,7 @@ pipeline {
                     steps {
                         dir('TestProject') {
                              sh '''
-                                    dotnet test Test/Test.csproj --collect:"XPlat Code Coverage"
+                                    dotnet test Test.csproj --collect:"XPlat Code Coverage"
                                 '''
                         }
                     }
