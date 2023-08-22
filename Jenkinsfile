@@ -22,7 +22,7 @@ pipeline {
                     steps {
                         dir('Addition') {
                             sh '''
-							dotnet build Addition/Jenkins-build.sln
+							dotnet build Jenkins-build.sln
                             '''
                         }
                     }
