@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "G:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj": {}
+    "g:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj": {}
   },
   "projects": {
     "G:\\SHLOK\\jenkins-dotnet\\Addition\\Jenkins-build.csproj": {
@@ -62,14 +62,14 @@
         }
       }
     },
-    "G:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj": {
+    "g:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj",
+        "projectUniqueName": "g:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "G:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj",
+        "projectPath": "g:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj",
         "packagesPath": "C:\\Users\\Lionex Richardson\\.nuget\\packages\\",
-        "outputPath": "G:\\SHLOK\\jenkins-dotnet\\Test\\obj\\",
+        "outputPath": "g:\\SHLOK\\jenkins-dotnet\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lionex Richardson\\AppData\\Roaming\\NuGet\\NuGet.Config",
