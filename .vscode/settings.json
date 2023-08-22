@@ -1,0 +1,3 @@
+{
+    "dotnet.defaultSolution": "Jenkins-build/Jenkins-build.sln"
+}
