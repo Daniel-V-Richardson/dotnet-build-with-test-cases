@@ -20,7 +20,7 @@ pipeline {
                         dotnetsdk 'dotnet-sdk-6.0'
                     }
                     steps {
-                        withSonarQubeEnv('UserManagement') {
+                        dir('Addition') {
                             sh '''
 							dotnet build Addition/Jenkins-build.sln
                             '''
