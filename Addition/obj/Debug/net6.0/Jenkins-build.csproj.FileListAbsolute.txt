@@ -88,3 +88,10 @@ G:\SHLOK\jenkins-dotnet\Addition\obj\Debug\net6.0\refint\Jenkins-build.dll
 G:\SHLOK\jenkins-dotnet\Addition\obj\Debug\net6.0\Jenkins-build.pdb
 G:\SHLOK\jenkins-dotnet\Addition\obj\Debug\net6.0\Jenkins-build.genruntimeconfig.cache
 G:\SHLOK\jenkins-dotnet\Addition\obj\Debug\net6.0\ref\Jenkins-build.dll
+G:\SHLOK\jenkins-dotnet\Addition\bin\Debug\net6.0\Sentry.dll
+G:\SHLOK\jenkins-dotnet\Addition\bin\Debug\net6.0\Sentry.AspNetCore.dll
+G:\SHLOK\jenkins-dotnet\Addition\bin\Debug\net6.0\Sentry.Extensions.Logging.dll
+G:\SHLOK\jenkins-dotnet\Addition\obj\Debug\net6.0\Jenkins-build.csproj.AssemblyReference.cache
+G:\SHLOK\jenkins-dotnet\Addition\obj\Debug\net6.0\Sentry.Attributes.cs
+G:\SHLOK\jenkins-dotnet\Addition\obj\Debug\net6.0\Jenkins-build.csproj.CopyComplete
+G:\SHLOK\jenkins-dotnet\Addition\bin\Debug\net6.0\Newtonsoft.Json.dll

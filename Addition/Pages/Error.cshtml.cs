@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Sentry;
 using System.Diagnostics;
 
 namespace Jenkins_build.Pages
@@ -22,6 +24,13 @@ namespace Jenkins_build.Pages
         public void OnGet()
         {
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+            // var exceptionHandlerPathFeature = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
+            // if (exceptionHandlerPathFeature?.Error != null)
+            // {
+            //     var exception = exceptionHandlerPathFeature.Error;
+
+            //     SentrySdk.CaptureException(exception);
+            // }
         }
     }
 }

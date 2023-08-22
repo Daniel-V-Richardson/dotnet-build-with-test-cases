@@ -7,4 +7,13 @@
     <RootNamespace>Jenkins_build</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Sentry.AspNetCore" Version="3.35.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Utils\Sentry\" />
+  </ItemGroup>
+
 </Project>

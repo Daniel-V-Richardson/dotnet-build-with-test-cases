@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "g:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj": {}
+    "G:\\SHLOK\\jenkins-dotnet\\TestProject\\Test.csproj": {}
   },
   "projects": {
     "G:\\SHLOK\\jenkins-dotnet\\Addition\\Jenkins-build.csproj": {
@@ -39,6 +39,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Sentry.AspNetCore": {
+              "target": "Package",
+              "version": "[3.35.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,14 +72,14 @@
         }
       }
     },
-    "g:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj": {
+    "G:\\SHLOK\\jenkins-dotnet\\TestProject\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "g:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj",
+        "projectUniqueName": "G:\\SHLOK\\jenkins-dotnet\\TestProject\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "g:\\SHLOK\\jenkins-dotnet\\Test\\Test.csproj",
+        "projectPath": "G:\\SHLOK\\jenkins-dotnet\\TestProject\\Test.csproj",
         "packagesPath": "C:\\Users\\Lionex Richardson\\.nuget\\packages\\",
-        "outputPath": "g:\\SHLOK\\jenkins-dotnet\\Test\\obj\\",
+        "outputPath": "G:\\SHLOK\\jenkins-dotnet\\TestProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lionex Richardson\\AppData\\Roaming\\NuGet\\NuGet.Config",
