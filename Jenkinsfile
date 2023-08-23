@@ -57,15 +57,15 @@ pipeline {
                 stage('Deploy to Minikube') {
                 steps {
                     script {
-                        sh 'kubectl apply -f deployment.yaml'
-                        sh 'kubectl apply -f service.yaml'
+                        sh "kubectl apply -f deployment.yaml"
+                        sh "kubectl apply -f service.yaml"
                     }
                 }
             }
             stage('Access the Application') {
                 steps {
                     script {
-                        sh 'kubectl get svc dotnet-app-service'
+                        sh "kubectl get svc dotnet-app-service"
                     }
                 }
             }
