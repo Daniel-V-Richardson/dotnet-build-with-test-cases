@@ -59,7 +59,7 @@ pipeline {
                 script {
                     def appLabel = 'my-app'
                     def namespace = 'default'
-                    def dockerImage = ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}
+                    def dockerImage = "${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
                     sh 'minikube start' // Start Minikube cluster
                     // Set Docker environment to use Minikube's Docker daemon
                     sh 'eval $(minikube docker-env)'
