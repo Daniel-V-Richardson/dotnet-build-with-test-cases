@@ -35,7 +35,7 @@ pipeline {
                     steps {
                         script {
                    
-                            sh "docker build -t ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION} ."
+                            sh "docker build -t ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION} -f ~/workspace/dotnet-build/Addition/Dockerfile ."
                         }
                     }
                 }
