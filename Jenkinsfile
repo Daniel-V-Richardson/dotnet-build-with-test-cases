@@ -56,11 +56,11 @@ pipeline {
                 }
                 stage('Deploy to Minikube') {
                 steps {
-                    script {
-                       withKubeConfig ([credentialsId: 'k8config']){
+                
+                       withKubeConfig([credentialsId: 'k8config']){
                         sh 'kubectl -n default apply -f deploymentservice.yaml'
                        }
-                    }
+                  
                 }
             }
         }
