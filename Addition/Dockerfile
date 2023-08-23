@@ -28,10 +28,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 as build-env
 WORKDIR /src
-COPY ["./Jenkins-build.csproj", "."]
+COPY ["~/workspace/dotnet-build/Addition/Jenkins-build.csproj", "."]
 RUN dotnet restore
 COPY . .
-RUN dotnet publish "./Jenkins-build.csproj" -c Release -o /publish
+RUN dotnet publish "~/workspace/dotnet-build/Addition/Jenkins-build.csproj" -c Release -o /publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 as runtime
 WORKDIR /publish
