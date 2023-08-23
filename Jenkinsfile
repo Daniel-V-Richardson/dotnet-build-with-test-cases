@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment {
+        DOCKER_IMAGE_VERSION = "1.1.${BUILD_ID}"
+        DOCKER_IMAGE_NAME = "danielshloklabs/dotnetbuild"
+    }
     stages {
         stage('PR Build'){
             stages {
@@ -9,9 +13,9 @@ pipeline {
                     }
                     steps {
                         dir('TestProject') {
-                             sh '''
-                                    dotnet test Test.csproj --collect:"XPlat Code Coverage"
-                                '''
+                            sh '''
+                                dotnet test Test.csproj --collect:"XPlat Code Coverage"
+                            '''
                         }
                     }
                 }
@@ -22,12 +26,41 @@ pipeline {
                     steps {
                         dir('Addition') {
                             sh '''
-							dotnet build Jenkins-build.sln
+                                dotnet build Jenkins-build.sln
                             '''
                         }
                     }
                 }
+                stage('Build Docker Image') {
+                    steps {
+                        script {
+                   
+                            sh "docker build -t ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION} ."
+                        }
+                    }
+                }
+                stage('Push Docker Image') {
+                    steps {
+                        script {
+                           
+                            sh "docker login -u danielshloklabs -p Hisgrace2001"
+                      
+                            sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
+                        }
+                    }
+                }
             }
+        }
+    }
+    post {
+        always {
+            echo 'Pipeline completed'
+        }
+        success {
+            echo 'Pipeline successful!'
+        }
+        failure {
+            echo 'Pipeline failed'
         }
     }
 }
