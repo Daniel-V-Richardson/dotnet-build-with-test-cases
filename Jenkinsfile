@@ -57,15 +57,7 @@ pipeline {
                 stage('Deploy to Minikube') {
                 steps {
                     script {
-                        sh "kubectl apply -f deployment.yaml"
-                        sh "kubectl apply -f service.yaml"
-                    }
-                }
-            }
-            stage('Access the Application') {
-                steps {
-                    script {
-                        sh "kubectl get svc dotnet-app-service"
+                       kubernetesDeploy (configs: 'deploymentservice.yaml', kubeconfigId: 'k8config')
                     }
                 }
             }
