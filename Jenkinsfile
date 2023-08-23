@@ -31,18 +31,6 @@ pipeline {
                         }
                     }
                 }
-                stage('Docker-in-Docker') {
-    steps {
-        script {
-            def dockerImage = 'docker:dind'
-            def dockerSocket = '/var/run/docker.sock'
-
-            docker.image(dockerImage).inside("--privileged -v $dockerSocket:$dockerSocket") {
-                sh 'docker ps' // Test Docker commands here
-            }
-        }
-    }
-}
                 stage('Build Docker Image') {
                     steps {
                         script {
