@@ -40,7 +40,7 @@ pipeline {
                     steps {
                         script {
                    
-                            sh "docker build -t ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
+                            sh "docker build -t ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION} ."
                         }
                     }
                 }
@@ -50,7 +50,7 @@ pipeline {
                            
                             sh "docker login -u danielshloklabs -p Hisgrace2001"
                       
-                            sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION} ."
+                            sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
                         }
                     }
                 }
