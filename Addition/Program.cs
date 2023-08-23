@@ -1,3 +1,6 @@
+using App.Metrics.AspNetCore;
+using App.Metrics.Formatters.Prometheus;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Sentry;
 
 namespace Jenkins_build
@@ -6,6 +9,7 @@ namespace Jenkins_build
     {
         public static void Main(string[] args)
         {
+
 
             using (SentrySdk.Init(options =>
             {
@@ -26,11 +30,31 @@ namespace Jenkins_build
                 var builder = WebApplication.CreateBuilder(args);
                 builder.WebHost.UseSentry();
 
+                builder.WebHost.UseMetricsWebTracking();
+
+                builder.WebHost.UseMetrics(options =>
+                {
+                    options.EndpointOptions = endpointOptions =>
+                    {
+                        endpointOptions.MetricsTextEndpointOutputFormatter = new MetricsPrometheusTextOutputFormatter();
+                        endpointOptions.MetricsEndpointOutputFormatter = new MetricsPrometheusProtobufOutputFormatter();
+                        endpointOptions.EnvironmentInfoEndpointEnabled = false;
+                    };
+                });
+
                 builder.Services.AddRazorPages();
+
+                builder.Services.AddMetrics();
+
+                builder.Services.Configure<KestrelServerOptions>(options =>
+                {
+                    options.AllowSynchronousIO = true;
+                });
+                
 
                 var app = builder.Build();
                 app.UseSentryTracing(); 
-
+             
 
                 if (!app.Environment.IsDevelopment())
                 {
@@ -45,6 +69,13 @@ namespace Jenkins_build
 
                 app.MapRazorPages();
 
+                app.Map("/api/throw-exception", app =>
+                {
+                    app.Run(async context =>
+                    {
+                        throw new Exception("This is a deliberate exception for testing Sentry.");
+                    });
+                });
 
                 app.Run();
             }

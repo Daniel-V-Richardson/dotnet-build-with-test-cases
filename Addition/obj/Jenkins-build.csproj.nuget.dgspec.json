@@ -40,6 +40,22 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "App.Metrics.AspNetCore": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "App.Metrics.AspNetCore.Endpoints": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "App.Metrics.AspNetCore.Tracking": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "App.Metrics.Formatters.Prometheus": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
