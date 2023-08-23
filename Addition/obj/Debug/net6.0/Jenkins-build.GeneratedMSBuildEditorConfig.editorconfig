@@ -9,37 +9,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Jenkins_build
 build_property.RootNamespace = Jenkins_build
-build_property.ProjectDir = G:\SHLOK\jenkins-dotnet\Addition\
+build_property.ProjectDir = g:\SHLOK\jenkins-dotnet\Addition\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = G:\SHLOK\jenkins-dotnet\Addition
+build_property.MSBuildProjectDirectory = g:\SHLOK\jenkins-dotnet\Addition
 build_property._RazorSourceGeneratorDebug = 
 
-[G:/SHLOK/jenkins-dotnet/Addition/Pages/Error.cshtml]
+[g:/SHLOK/jenkins-dotnet/Addition/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/SHLOK/jenkins-dotnet/Addition/Pages/Index.cshtml]
+[g:/SHLOK/jenkins-dotnet/Addition/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/SHLOK/jenkins-dotnet/Addition/Pages/Privacy.cshtml]
+[g:/SHLOK/jenkins-dotnet/Addition/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/SHLOK/jenkins-dotnet/Addition/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[g:/SHLOK/jenkins-dotnet/Addition/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/SHLOK/jenkins-dotnet/Addition/Pages/_ViewImports.cshtml]
+[g:/SHLOK/jenkins-dotnet/Addition/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/SHLOK/jenkins-dotnet/Addition/Pages/_ViewStart.cshtml]
+[g:/SHLOK/jenkins-dotnet/Addition/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/SHLOK/jenkins-dotnet/Addition/Pages/Shared/_Layout.cshtml]
+[g:/SHLOK/jenkins-dotnet/Addition/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-e6doc47wjf
