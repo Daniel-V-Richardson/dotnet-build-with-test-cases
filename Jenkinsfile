@@ -31,11 +31,6 @@ pipeline {
                         }
                     }
                 }
-                stage('Install Docker') {
-    steps {
-        sh 'apt-get update && apt-get install -y docker-ce-cli'
-    }
-}
                 stage('Docker-in-Docker') {
     steps {
         script {
