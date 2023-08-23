@@ -31,6 +31,11 @@ pipeline {
                         }
                     }
                 }
+                stage('Debug') {
+    steps {
+        sh 'ls -l /var/jenkins_home/workspace/dotnet-build/Addition'
+    }
+}
                 stage('Build Docker Image') {
                     steps {
                         script {
