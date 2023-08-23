@@ -56,11 +56,9 @@ pipeline {
                 }
                 stage('Deploy to Minikube') {
                 steps {
-                
-                       withKubeConfig([credentialsId: 'k8config']){
-                        sh 'kubectl -n default apply -f deploymentservice.yaml'
-                       }
-                  
+                    script {
+                       kubernetesDeploy (configs: 'deploymentservice.yaml', kubeconfigText: 'k8config')
+                    }
                 }
             }
         }
