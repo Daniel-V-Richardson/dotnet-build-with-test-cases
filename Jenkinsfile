@@ -3,6 +3,7 @@ pipeline {
     environment {
         DOCKER_IMAGE_VERSION = "1.1.${BUILD_ID}"
         DOCKER_IMAGE_NAME = "danielshloklabs/dotnetbuild"
+        
     }
     stages {
         stage('PR Build'){
@@ -44,19 +45,30 @@ pipeline {
                     }
                 }
                 stage('Push Docker Image') {
+                    environment {
+                        registryCredentials = 'docker_cred'
+                        dockerImage= "${DOCKER_IMAGE_NAME}"
+                    }
                     steps {
                         script {
-                            sh "docker login -u danielshloklabs -p Hisgrace2001"
-                            sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
+                            docker.withRegistry('https://registry.hub.docker.com', registryCredentials){
+                                dockerImage.push("${DOCKER_IMAGE_VERSION}")
+                            }
+                            // sh "docker login -u danielshloklabs -p Hisgrace2001"
+                            // sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
                         }
                     }
                 }
                 stage('Clean Docker Image') {
                     steps {
                         script {
-                            sh "docker login -u danielshloklabs -p Hisgrace2001"
-                            sh "docker rmi ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
-                            sh "docker logout"
+                            script {
+                                docker.withRegistry('https://registry.hub.docker.com', registryCredentials) {
+                                    sh "docker rmi ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
+                                }
+                            // sh "docker login -u danielshloklabs -p Hisgrace2001"
+                            // sh "docker rmi ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
+                            // sh "docker logout"
                         }
                     }
                 }
