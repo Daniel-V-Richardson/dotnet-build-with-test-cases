@@ -50,11 +50,11 @@ pipeline {
                     }
                     steps {
                         script {
-                            docker.withRegistry('https://registry.hub.docker.com', registryCredentials){
-                                sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
-                            }
-                            // sh "docker login -u danielshloklabs -p Hisgrace2001"
-                            // sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
+                            // docker.withRegistry('https://registry.hub.docker.com', registryCredentials){
+                            //     sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
+                            // }
+                            sh "docker login -u danielshloklabs -p Hisgrace2001"
+                            sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
                         }
                     }
                 }
@@ -62,12 +62,12 @@ pipeline {
                     steps {
                         script {
                             script {
-                                docker.withRegistry('https://registry.hub.docker.com', registryCredentials) {
-                                    sh "docker rmi ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
-                                }
-                            // sh "docker login -u danielshloklabs -p Hisgrace2001"
-                            // sh "docker rmi ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
-                            // sh "docker logout"
+                                // docker.withRegistry('https://registry.hub.docker.com', registryCredentials) {
+                                //     sh "docker rmi ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
+                                // }
+                            sh "docker login -u danielshloklabs -p Hisgrace2001"
+                            sh "docker rmi ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
+                            sh "docker logout"
                         }
                     }
                 }
