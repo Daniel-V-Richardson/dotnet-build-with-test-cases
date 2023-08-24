@@ -39,7 +39,6 @@ pipeline {
                 stage('Build Docker Image') {
                     steps {
                         script {
-                   
                             sh "docker build -t ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION} -f /var/jenkins_home/workspace/dotnet-build/Addition/Dockerfile ."
                         }
                     }
@@ -47,10 +46,17 @@ pipeline {
                 stage('Push Docker Image') {
                     steps {
                         script {
-                           
                             sh "docker login -u danielshloklabs -p Hisgrace2001"
-                      
                             sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
+                        }
+                    }
+                }
+                stage('Clean Docker Image') {
+                    steps {
+                        script {
+                            sh "docker login -u danielshloklabs -p Hisgrace2001"
+                            sh "docker rmi ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
+                            sh "docker logout"
                         }
                     }
                 }
