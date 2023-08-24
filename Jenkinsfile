@@ -47,12 +47,11 @@ pipeline {
                 stage('Push Docker Image') {
                     environment {
                         registryCredentials = 'docker_cred'
-                        dockerImage= "${DOCKER_IMAGE_NAME}"
                     }
                     steps {
                         script {
                             docker.withRegistry('https://registry.hub.docker.com', registryCredentials){
-                                dockerImage.push("${DOCKER_IMAGE_VERSION}")
+                                sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
                             }
                             // sh "docker login -u danielshloklabs -p Hisgrace2001"
                             // sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_VERSION}"
