@@ -15,7 +15,7 @@ namespace Jenkins_build.Pages
         public void OnGet()
         {
            
-              throw new Exception("Exception from PrivacyPage");
+              throw new Exception("Exception from Privacy Model");
            
         }
     }

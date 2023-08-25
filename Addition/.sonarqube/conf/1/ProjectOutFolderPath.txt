@@ -1,0 +1,1 @@
+G:\SHLOK\jenkins-dotnet\Addition\.sonarqube\out\1

@@ -1,0 +1,13 @@
+﻿G:\SHLOK\jenkins-dotnet\TestProject\GlobalUsings.cs
+G:\SHLOK\jenkins-dotnet\TestProject\UnitTest1.cs
+C:\Users\Lionex Richardson\.nuget\packages\microsoft.net.test.sdk\17.5.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\Lionex Richardson\.nuget\packages\microsoft.testplatform.testhost\17.5.0\build\netcoreapp3.1\x64\testhost.exe
+C:\Users\Lionex Richardson\.nuget\packages\microsoft.testplatform.testhost\17.5.0\build\netcoreapp3.1\x64\testhost.dll
+G:\SHLOK\jenkins-dotnet\TestProject\TestResults\2a8abb6c-8fca-46e3-bf6a-c3545b8d3e73\coverage.cobertura.xml
+G:\SHLOK\jenkins-dotnet\TestProject\TestResults\4db957b8-45e1-481e-a8ea-72f9e67da5ff\coverage.cobertura.xml
+G:\SHLOK\jenkins-dotnet\TestProject\TestResults\c128860c-1a61-4120-8de2-5f3a32267d9b\coverage.cobertura.xml
+G:\SHLOK\jenkins-dotnet\TestProject\TestResults\f044f9d5-b6e0-41ba-893c-0cacffb28edb\coverage.cobertura.xml
+C:\Users\Lionex Richardson\.nuget\packages\mstest.testadapter\2.2.10\build\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Lionex Richardson\.nuget\packages\mstest.testadapter\2.2.10\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Lionex Richardson\.nuget\packages\mstest.testadapter\2.2.10\build\net5.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Lionex Richardson\.nuget\packages\mstest.testadapter\2.2.10\build\net5.0\Microsoft.TestPlatform.AdapterUtilities.dll

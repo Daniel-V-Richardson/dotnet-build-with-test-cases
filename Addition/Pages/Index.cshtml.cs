@@ -8,7 +8,7 @@ namespace Jenkins_build.Pages
     {
         public void OnGet()
         {
-                throw new Exception("This is a test exception from the IndexModel.");
+                //throw new Exception("This is a test exception from the IndexModel.");
         }
     }
 }
